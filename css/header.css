@@ -1,0 +1,169 @@
+.slanted {
+  background-color: rgb(30, 45, 47);
+  height: 300px;
+  width: 100%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 66%, 0 100%); 
+}
+
+.container-flex {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-container {
+  width: 100%;
+  background: url(../patterns/cork-board.png);
+  border: 5px white solid;
+  /* margin: 0 auto; */
+  margin-left: 80px;
+  margin-right: 80px;
+  /* margin-top: 10px; */
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+}
+
+#mobile-navbar {
+  display: none;
+  
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 123, 87);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* text-align: center; */
+  height: 30px;
+  border-top: 5px solid white;
+}
+
+#navbar li {
+  flex: 1;
+  text-align: center;
+  font: 14px Chivo, Arial, Tahoma, sans-serif;
+  font-weight: bold;
+  color: rgb(255, 253, 251);
+  /* display: inline-block; */
+}
+
+#navbar li a {
+  display: block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#navbar li:hover {
+  /* text-decoration: underline; */
+  background-color: white;
+  color: rgb(197, 123, 87);
+  cursor: pointer;
+}
+
+.selected {
+  background-color: white;
+  color: rgb(197, 123, 87) !important;
+}
+
+#navbar li:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+#sign {
+  position: absolute;
+  height: 150px;
+  /* margin-top: 5px;
+  margin-left: 15px; */
+  /* align-self: start; */
+  left: 0;
+  z-index: 100;
+}
+
+#postit {
+  line-height: 1;    
+  text-align: center;
+  align-self: flex-start;
+  width: 400px;
+  min-height: 92px;
+  max-height: 92px;
+  position: relative;   
+  border:1px solid #E8E8E8;  
+  /* border-top:60px solid #fdfd86; */
+  font-family: 'Courgette';    
+  font-size: 25px;
+  font-weight: 500;
+  border-bottom-right-radius: 60px 5px;
+  display: inline-block;    
+  background: #ffff88; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
+  background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1);
+}
+
+#postit span {
+  color: black;
+  -webkit-text-fill-color: saddlebrown; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  display: block;
+  font-family: 'PT+sans';
+  font-size: 55px;
+  font-weight: 700;
+}
+
+@media all and (max-width: 980px) {
+  #navbar {
+    display: none;
+  }
+  #mobile-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 123, 87);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    border-top: 5px solid white;
+  }
+
+  #mobile-navbar li {
+    text-align: center;
+    color: rgb(255, 253, 251);
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  #mobile-navbar li a {
+    display: block;
+  }
+  
+  #mobile-navbar img {
+    vertical-align: middle;
+    width: 24px;
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  #mobile-navbar li:not(:last-child) {
+    border-right: 1px solid white;
+  }
+  .selected-mobile {
+    background-color: rgb(30, 45, 47);
+    border: 1px solid white;
+    /* border-radius: 50%; */
+    border-radius: 20%;
+  }
+
+} 
