@@ -63,6 +63,15 @@ body {
   -1px -1px 30px rgba(0,0,0,0.2);
 }
 
+.col-img {
+  min-width: 300px;
+  padding: 50px;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .col img {
   object-fit: contain;
   width: 100%;
