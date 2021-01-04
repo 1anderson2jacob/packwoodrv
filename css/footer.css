@@ -1,32 +1,32 @@
 #footer {
   position: absolute;
-  /* height: 100px; */
+  height: 200px;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: rgb(30, 45, 47);
+  font-size: 24px;
 }
 
 .footer-flex {
   display: flex;
-  /* justify-content: center; */
   font-family: 'Space Grotesk', sans-serif;
   color: white;
 }
 
 #footer-info {
+  /* height: 200px; */
   width: 40%;
   border-right: 1px white solid;
-  /* justify-content: center; */
   text-align: center;
+  /* align-items: center; */
 }
 
 .footer-col {
+  /* height: 100%; */
   line-height: 200%;
   padding: 20px;
-  /* display: flex; */
-  /* justify-content: center; */
 }
 
 #website-links span {
