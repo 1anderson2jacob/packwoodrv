@@ -48,8 +48,8 @@
 #navbar li {
   flex: 1;
   text-align: center;
-  font: 14px Chivo, Arial, Tahoma, sans-serif;
-  font-weight: bold;
+  font: 18px Chivo, Arial, Tahoma, sans-serif;
+  /* font-weight: bold; */
   color: rgb(255, 253, 251);
   /* display: inline-block; */
 }
@@ -76,12 +76,27 @@
   border-right: 1px solid white;
 }
 
+.tooltip {
+  display: none;
+  position: absolute;
+  background: rgb(197, 123, 87);
+  /* background: black; */
+  z-index: 1;
+
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 8px;
+  padding: 5px;
+  border: 1px solid white;
+}
+
+#navbar li:hover ~ .tooltip{
+  display: absolute;
+}
+
 #sign {
   position: absolute;
   height: 150px;
-  /* margin-top: 5px;
-  margin-left: 15px; */
-  /* align-self: start; */
   left: 0;
   z-index: 100;
 }
@@ -156,9 +171,17 @@
     cursor: pointer;
   }
 
-  #mobile-navbar li:not(:last-child) {
-    border-right: 1px solid white;
+  #mobile-navbar img:hover {
+    border: 1px solid white;
   }
+
+  #mobile-navbar li:hover > .tooltip{
+    display: block;
+  }
+  /* #mobile-navbar li:not(:last-child) {
+    border-right: 1px solid white;
+  } */
+
   .selected-mobile {
     background-color: rgb(30, 45, 47);
     border: 1px solid white;
