@@ -108,7 +108,7 @@ body {
 
 @media all and (max-width: 980px) {
   body {
-    min-height: 600px;
+    min-height: 0;
   }
   .flex-box {
     flex-flow: row wrap;
