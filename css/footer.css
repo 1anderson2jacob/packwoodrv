@@ -1,12 +1,11 @@
 #footer {
   position: absolute;
-  height: 200px;
+  height: 100px;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
   background-color: rgb(30, 45, 47);
-  font-size: 24px;
 }
 
 .footer-flex {
@@ -31,4 +30,12 @@
 
 #website-links span {
   text-decoration: underline;
+}
+
+@media all and (max-width: 980px) {
+  #footer {
+    height: 200px;
+    font-size: 24px;
+  }
+
 }
