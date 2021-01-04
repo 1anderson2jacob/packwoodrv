@@ -90,10 +90,6 @@
   border: 1px solid white;
 }
 
-#navbar li:hover ~ .tooltip{
-  display: absolute;
-}
-
 #sign {
   position: absolute;
   height: 150px;
