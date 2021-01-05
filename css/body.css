@@ -25,7 +25,7 @@ body {
 .flex-grid-half {
 }
 
-.gallery {
+/* .gallery {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -34,7 +34,7 @@ body {
 .gallery img {
   width: 100%;
   /* height: 150px; */
-}
+} */
 
 .flex-box .col {
   width: 100%;
@@ -105,6 +105,46 @@ body {
 .gmaps {
   border: 1px black solid !important;
 }
+
+/* gallery */
+.gallery > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #20263f;
+}
+.gallery > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery {
+  padding: 30px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 300px;
+  margin-bottom: 80px;
+}
+
+img {
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.gallery > div:hover {
+  transform: scale(1.1);
+}
+.gallery > div:hover .description {
+  display: block;
+  text-align: center;
+}
+
+.gallery > div:hover img {
+  opacity: 0.7;
+}
+/* gallery */
 
 @media all and (max-width: 980px) {
   body {
