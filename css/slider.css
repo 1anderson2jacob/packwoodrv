@@ -4,8 +4,17 @@
 
 #slider-img {
   width: 100%;
-  height: auto;
+  /* calc(100vh - .header height) */
+  height: calc(100vh - 120px);
   float: left;
+  object-fit: cover;
+}
+.pos-top {
+  object-position: top;
+}
+
+.pos-bot {
+  object-position: bottom;
 }
 
 #slider {
@@ -43,3 +52,10 @@
   from {opacity: .4}  
   to {opacity: 1} 
 } 
+
+@media screen and (max-width: 680px) {
+  #slider-img {
+    /* calc(100vh - .header height) */
+    height: calc(100vh - 140px);
+  }
+}
