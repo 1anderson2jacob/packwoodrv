@@ -5,16 +5,25 @@ bindSlider();
 function bindSlider() {
   // const leftSliderBtn = document.getElementById('slider-left-btn');
   // const rightSliderBtn = document.getElementById('slider-right-btn');
+
   const slider = document.getElementById('slider');
+  const mc = new Hammer(slider);
 
   slider.addEventListener('click', (e) => {
     // console.log(e.)
     if (e.target && e.target.id == 'slider-left-btn') {
-      changeSlide(e.target.id);
+      changeSlide('left');
     }
     if (e.target && e.target.id == 'slider-right-btn') {
-      changeSlide(e.target.id);
+      changeSlide('right');
     }
+  })
+
+  mc.on('panleft', (e) => {
+    changeSlide('right');
+  })
+  mc.on('panright', (e) => {
+    changeSlide('left');
   })
 
 }
@@ -26,13 +35,13 @@ function changeSlide(arrow) {
     slides[i].style.display = "none";
   }
 
-  if (arrow == 'slider-right-btn') { //increment
+  if (arrow == 'right') { //increment
     slideIndex++;
 
     if (slideIndex > slides.length) {
       slideIndex = 1;
     }
-  } else if (arrow == 'slider-left-btn') { //decrement
+  } else if (arrow == 'left') { //decrement
     slideIndex--;
 
     if (slideIndex < 1) {
