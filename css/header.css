@@ -51,6 +51,7 @@
 #navbar li {
   display: inline;
   margin-right: 20px;
+  padding: 10px;
 }
 
 #navbar a {
@@ -60,17 +61,17 @@
 
 .selected {
   border: 1px solid white;
-  padding: 10px;
   border-radius: 3px;
 }
 
-@media all and (max-width: 770px) {
+@media screen and (max-width: 850px) {
   #navbar {
     font-size: 15px;
   }
 }
 
-@media screen and (max-width: 680px) {
+/* @media screen and (max-width: 680px) { */
+@media screen and (max-width: 762px) {
   #header {
     height: 140px;
   }
@@ -88,14 +89,18 @@
   #nav-container {
     float: none;
     text-align: center;
+    /* display: table; */
+    padding: 5px;
   }
   #navbar {
     margin-right: 0;
     font-size: 15px;
     padding-top: 10px;
-    line-height: 1.5;
+    /* padding-bottom: 10px; */
+    line-height: 1.6;
+    /* line-height: 2; */
   }
-  .selected {
+  #navbar li {
     padding: 5px;
   }
 }
