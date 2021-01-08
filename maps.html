@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
@@ -17,110 +17,60 @@
 </head>
 
 <body>
-  <div class="dim" id="modal"></div>
-  <img id="popup" class="fade-in"></img>
-  <div class="wrapper">
-
-    <div class="header">
-      <div class="slanted">
-        <!-- <img src="images/sign-oval.png" id="sign"> -->
-        <div class="container-flex">
-          <div id="nav-container">
-            <div id="postit">
-              <span>PACKWOOD</span>
-              RV PARK AND CAMPGROUND
-            </div>
-            <ul id="navbar">
-              <li>
-                <a href="index.html">Home</a><span class="tooltip">Home</span></li>
-              <li>
-                <a href="reservations.html">Reservations</a><span class="tooltip">Reservations</span>
-              </li>
-              <li>
-                <a href="about-us.html">About Us</a><span class="tooltip">About Us</span>
-              </li>
-              <li>
-                <a href="activities.html">Activities</a><span class="tooltip">Activities</span>
-              </li>
-              <li class="selected">
-                <a href="maps.html">Maps</a><span class="tooltip">Maps</span>
-              </li>
-              <li><a href="directions.html">
-                  Directions</a><span class="tooltip">Directions</span>
-              </li>
-              <li><a href="gallery.html">Gallery</a><span class="tooltip">Gallery</span>
-              </li>
-            </ul>
-            <!-- mobile -->
-            <ul id="mobile-navbar">
-              <li>
-                <a href="index.html"><img src="images/icons/home.svg"></a><span class="tooltip">Home</span>
-              </li>
-              <li>
-                <a href="reservations.html"><img src="images/icons/reservations.svg"></a><span
-                  class="tooltip">Reservations</span>
-              </li>
-              <li>
-                <a href="about-us.html"><img src="images/icons/about-us.svg"></a><span class="tooltip">About Us</span>
-              </li>
-              <li>
-                <a href="activities.html"><img src="images/icons/activities.svg"></a><span
-                  class="tooltip">Activities</span>
-              </li>
-              <li>
-                <a href="maps.html"><img class="selected-mobile" src="images/icons/maps.svg"></a><span
-                  class="tooltip">Maps</span>
-              </li>
-              <li>
-                <a href="directions.html"><img src="images/icons/directions.svg"></a><span
-                  class="tooltip">Directions</span>
-              </li>
-              <li>
-                <a href="gallery.html"><img src="images/icons/gallery.svg"></a><span class="tooltip">Gallery</span>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <div id="header">
+    <div id="logo-container">
+      <div id="logo">
+        <img src="/images/Mountain.svg" />
+        <span id="logo-text"><span id="packwood-rv">Packwood RV </span>Park and Campground </span>
       </div>
     </div>
 
-    <div class="body">
-      <div class="flex-grid-half flex-box">
-        <div class="col">
-          <span class="map-span">Site Map</span>
-          <a href="./images/site-map.jpg" target="_blank">
-            <img class="hoverzoom" src="images/site-map.jpg" alt="site map">
-          </a>
-        </div>
-        <div class="col">
-          <span class="map-span">Vendor Map</span>
-          <a href="./images/vendor-map.jpg" target="_blank">
-            <img class="hoverzoom" src="images/vendor-map.jpg" alt=" vendor map">
-          </a>
-
-        </div>
-      </div>
+    <div id="nav-container">
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="activities.html">Activities</a></li>
+        <li class="selected"><a href="maps.html">Maps</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
     </div>
-
-
-    <div id="footer">
-      <div class="footer-flex">
-        <div id="footer-info" class="footer-col">
-          &#169; Packwood RV Park and Campground
-          <br>
-          All rights reserved
-        </div>
-        <div id="website-links" class="footer-col">
-          <span><a href="http://nutinico.com">Nutinico</a></span>
-          <br>
-          <span><a href="http://cascadekamloops.com">Cascade Kamloops Trout Farm & RV Park</a></span>
-        </div>
-      </div>
-    </div>
-
   </div>
 
-  <script type="text/javascript" src="main.js"></script>
+  <div class="body">
+    <div class="flex-grid-half flex-box">
+      <div class="col">
+        <span class="map-span">Site Map</span>
+        <a href="./images/site-map.jpg" target="_blank">
+          <img class="hoverzoom" src="images/site-map.jpg" alt="site map">
+        </a>
+      </div>
+      <div class="col">
+        <span class="map-span">Vendor Map</span>
+        <a href="./images/vendor-map.jpg" target="_blank">
+          <img class="hoverzoom" src="images/vendor-map.jpg" alt=" vendor map">
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <div id="footer">
+    <div class="footer-flex">
+      <div id="footer-info" class="footer-col">
+        &#169; Packwood RV Park and Campground
+        <br>
+        All rights reserved
+      </div>
+      <div id="website-links" class="footer-col">
+        <span><a href="http://nutinico.com">Nutinico</a></span>
+        <br>
+        <span><a href="http://cascadekamloops.com">Cascade Kamloops Trout Farm & RV Park</a></span>
+      </div>
+    </div>
+  </div> -->
+
+  <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 
 </html>

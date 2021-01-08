@@ -1,15 +1,44 @@
-
+html {
+  height: 100%;
+}
 body {
   height: 100%;
-  background-color: rgb(247, 219, 167);
-  min-height: 800px;
+  background-color: #65c2f5;
+  /* background-image: url("../images/mountains/mountain1.jfif");
+  background-repeat: no-repeat;
+  background-attachment: fixed; */
+  /* min-height: 800px; */
+}
+/* .body {
+  width: 100%;
+  height: 100%;
+  background: url('../images/mountains/mountain1.jfif') no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; 
+} */
+
+.background {
+  height: 100%;
+  background: url('../images/mountains/mountain1.jfif');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; 
+  background-size: no-repeat;
+}
+
+.background-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .flex-box {
   /* margin-left and margin-right are a product of */
   margin-left: 75px;
   margin-right: 75px;
-  margin-top: -100px;
+  /* margin-top: -100px; */
   margin-bottom: 100px; /* margin-bottom is padding x 2 = 0 */
   position: relative;
   padding: 20px;
@@ -129,8 +158,8 @@ body {
 }
 
 img {
-  border-radius: 10px;
-  padding: 5px;
+  /* border-radius: 10px;
+  padding: 5px; */
 }
 
 .gallery > div:hover {
@@ -147,7 +176,7 @@ img {
 /* gallery */
 
 @media all and (max-width: 980px) {
-  body {
+  /* body {
     min-height: 0;
   }
   .flex-box {
@@ -156,6 +185,6 @@ img {
 
   .col {
     min-width: 400px;
-  }
+  } */
 }
 

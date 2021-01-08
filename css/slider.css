@@ -1,0 +1,45 @@
+.slider-image-container:not(:first-child) {
+  display: none;
+}
+
+#slider-img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+#slider {
+  position: relative;
+  overflow: overlay;
+}
+
+#slider-left-btn {
+  position: absolute;
+  width: 35px;
+  left: 5%;
+  top: 50%;
+}
+
+#slider-right-btn {
+  position: absolute;
+  width: 35px;
+  right: 5%;
+  top: 50%;
+}
+
+.fade { 
+  -webkit-animation-name: fade-image; 
+  -webkit-animation-duration: 1.5s; 
+  animation-name: fade-image; 
+  animation-duration: 1.5s; 
+} 
+  
+@-webkit-keyframes fade-image { 
+  from {opacity: .4}  
+  to {opacity: 1} 
+} 
+  
+@keyframes fade-image { 
+  from {opacity: .4}  
+  to {opacity: 1} 
+} 
