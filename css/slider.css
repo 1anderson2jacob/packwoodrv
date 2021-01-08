@@ -56,6 +56,6 @@
 @media screen and (max-width: 680px) {
   #slider-img {
     /* calc(100vh - .header height) */
-    height: calc(100vh - 140px);
+    height: calc(100vh - 160px);
   }
 }
