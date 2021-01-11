@@ -7,6 +7,7 @@ function bindSlider() {
   // const rightSliderBtn = document.getElementById('slider-right-btn');
 
   const slider = document.getElementById('slider');
+  // const mc = new Hammer.Swipe(slider);
   const mc = new Hammer(slider);
 
   slider.addEventListener('click', (e) => {
@@ -19,10 +20,10 @@ function bindSlider() {
     }
   })
 
-  mc.on('panleft', (e) => {
+  mc.on('swipeleft', (e) => {
     changeSlide('right');
   })
-  mc.on('panright', (e) => {
+  mc.on('swiperight', (e) => {
     changeSlide('left');
   })
 
