@@ -19,7 +19,7 @@
   display: inline-block;
   text-align: center;
   width: 170px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 #logo img {
@@ -42,7 +42,7 @@
   padding-top: 50px;
   margin-right: 40px;
 
-  font-style: courgette;
+  /* font-family: courgette; */
   font-size: 20px;
   font-weight: 550;
   letter-spacing: 2px;
@@ -64,14 +64,20 @@
   border-radius: 3px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 853px) {
   #navbar {
     font-size: 15px;
   }
 }
 
+@media screen and (max-width: 890px) {
+  #navbar li {
+    margin-right: 15px;
+  }
+}
+
 /* @media screen and (max-width: 680px) { */
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 766px) {
   #header {
     height: 160px;
   }
@@ -80,18 +86,22 @@
     text-align: center;
     display: block;
   }
+
   #logo img {
     width: 80px;
   }
+
   #packwood-rv {
   font-size: 20px;
   }
+
   #nav-container {
     float: none;
     text-align: center;
     /* display: table; */
     padding: 5px;
   }
+
   #navbar {
     margin-right: 0;
     font-size: 15px;
@@ -100,6 +110,7 @@
     line-height: 1.6;
     /* line-height: 2; */
   }
+
   #navbar li {
     padding: 5px;
   }
