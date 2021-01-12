@@ -3,15 +3,10 @@ let slideIndex = 1;
 bindSlider();
 
 function bindSlider() {
-  // const leftSliderBtn = document.getElementById('slider-left-btn');
-  // const rightSliderBtn = document.getElementById('slider-right-btn');
-
   const slider = document.getElementById('slider');
-  // const mc = new Hammer.Swipe(slider);
   const mc = new Hammer(slider);
 
   slider.addEventListener('click', (e) => {
-    // console.log(e.)
     if (e.target && e.target.id == 'slider-left-btn') {
       changeSlide('left');
     }
@@ -26,7 +21,6 @@ function bindSlider() {
   mc.on('swiperight', (e) => {
     changeSlide('left');
   })
-
 }
 
 function changeSlide(arrow) {
@@ -49,8 +43,6 @@ function changeSlide(arrow) {
       slideIndex = (slides.length);
     }
   }
-  console.log('showing slide ' + slideIndex);
 
   slides[slideIndex - 1].style.display = "block"
-
 }
