@@ -1,0 +1,55 @@
+#amenities-section {
+  background-color: #F5FAFA;
+  padding: 20px;
+  background-color: #DFF0E2;
+}
+
+#amenities-container {
+  margin: 0 auto;
+  max-width: 700px;
+  height: 250px;
+  border: 1px solid black;
+  background-color: #F5FAFA;
+}
+
+#amenities-list {
+  width: 500px;
+  margin: 0 auto;
+  height: 150px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1.5;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  
+  margin-bottom: 20px;
+}
+
+#amenities-list li {
+  margin-right: 10px;
+}
+
+#tree-bp{ 
+  position: relative;
+  width: 25px;
+  top: 6px;
+}
+
+@media screen and (max-width: 550px) {
+  #amenities-list {
+    flex-wrap: nowrap;
+    height: auto;
+    width: auto;
+    margin-left: 50px;
+    /* margin-left: 10px; */
+    /* text-align: center; */
+  }
+
+  #amenities-container {
+    height: auto;
+    /* margin-left: 10px; */
+  }
+}
+

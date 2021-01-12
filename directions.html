@@ -7,12 +7,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+sans">
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/header.css">
-  <link rel="stylesheet" href="./css/textures.css">
-  <link rel="stylesheet" href="./css/body.css">
-  <link rel="stylesheet" href="./css/footer.css">
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/directions.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/body.css">
+  <link rel="stylesheet" href="./css/slider.css">
+  <link rel="stylesheet" href="./css/footer.css">
   <title>Packwood RV Park and Campground</title>
 </head>
 
@@ -37,6 +37,25 @@
   </div>
 
   <div class="body">
+
+    <div id="slider">
+      <div class="slider-image-container fade">
+        <img id="slider-img" src="images/mountains/mountain1.jfif">
+      </div>
+      <div class="slider-image-container fade">
+        <img id="slider-img" class="pos-bot" src="images/mountains/mountain2.jfif">
+      </div>
+      <div class="slider-image-container fade">
+        <img id="slider-img" class="pos-top" src="images/mountains/mountain3.jfif">
+      </div>
+      <div class="slider-image-container fade">
+        <img id="slider-img" class="pos-top" src="images/mountains/mountain4.jfif">
+      </div>
+      <input id="slider-left-btn" type="image" src="images/icons/arrow-outline-left.svg">
+      <input id="slider-right-btn" type="image" src="images/icons/arrow-outline-right.svg">
+      <div id="reservations-btn"><a href="reservations.html">Make Reservations Now</a></div>
+    </div>
+
     <div class="flex-box">
       <div class="col">
         <iframe class="gmaps" width="600" height="400" frameborder="0" style="border:0"
@@ -61,7 +80,9 @@
     </div>
   </div> -->
 
+  <script src="https://hammerjs.github.io/dist/hammer.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/slider.js"></script>
 </body>
 
 </html>
