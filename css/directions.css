@@ -1,0 +1,9 @@
+#maps-link img{
+  cursor: pointer;
+}
+@media screen and (max-width: 1100px) {
+  #maps-link img{
+    cursor: pointer;
+    width: 100px;
+  }
+}

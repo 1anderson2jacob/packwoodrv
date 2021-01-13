@@ -4,7 +4,6 @@
 
 #slider-img {
   width: 100%;
-  /* calc(100vh - .header height) */
   height: calc(100vh - 120px);
   float: left;
   object-fit: cover;
@@ -50,9 +49,6 @@
   text-align: center;
   border-radius: 3px;
   background-color: rgba(255,255,255,.2);
-
-  /* -webkit-text-stroke: 1px black; */
-  /* -webkit-text-fill-color: white; */
 }
 
 #reservations-btn:hover {
@@ -78,7 +74,6 @@
 
 @media screen and (max-width: 680px) {
   #slider-img {
-    /* calc(100vh - .header height) */
     height: calc(100vh - 160px);
   }
 }
