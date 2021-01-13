@@ -22,17 +22,32 @@
 }
 
 #slider-left-btn {
+  cursor: pointer;
   position: absolute;
-  width: 35px;
-  left: 5%;
-  top: 50%;
+  height: 100%;
+  width: 15%;
 }
 
 #slider-right-btn {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  right: 0;
+  width: 15%;
+}
+
+#slider-left-btn img {
   position: absolute;
   width: 35px;
-  right: 5%;
   top: 50%;
+  left: 50%;
+}
+
+#slider-right-btn img {
+  position: absolute;
+  width: 35px;
+  top: 50%;
+  right: 50%;
 }
 
 #reservations-btn {
@@ -75,5 +90,14 @@
 @media screen and (max-width: 680px) {
   #slider-img {
     height: calc(100vh - 160px);
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  #slider-left-btn:hover {
+    background-color: rgba(0,0,0,0.2);
+  }
+  
+  #slider-right-btn:hover {
+    background-color: rgba(0,0,0,0.2);
   }
 }
