@@ -7,10 +7,10 @@ function bindSlider() {
   const mc = new Hammer(slider);
 
   slider.addEventListener('click', (e) => {
-    if (e.target && e.target.id == 'slider-left-btn') {
+    if (e.target && (e.target.id == 'slider-left-btn' || e.target.id == 'slider-left-arrow')) {
       changeSlide('left');
     }
-    if (e.target && e.target.id == 'slider-right-btn') {
+    if (e.target && (e.target.id == 'slider-right-btn' || e.target.id == 'slider-right-arrow')) {
       changeSlide('right');
     }
   })
