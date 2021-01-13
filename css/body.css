@@ -37,7 +37,7 @@ h1 {
   font-family: Georgia, serif;
   text-indent: 20px;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.5;
   margin-bottom: 10px;
 }
 
@@ -45,6 +45,7 @@ h1 {
   object-fit: contain;
   overflow: hidden;
   border-radius: 3px;
+  margin-right: 10px;
 }
 
 .map-span {
