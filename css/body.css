@@ -42,7 +42,6 @@ h1 {
 }
 
 .section-img-container {
-  margin-left: 10px;
   object-fit: contain;
   overflow: hidden;
   border-radius: 3px;
