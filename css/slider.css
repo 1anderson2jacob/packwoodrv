@@ -38,15 +38,15 @@
 
 #slider-left-btn img {
   position: absolute;
-  width: 35px;
-  top: 50%;
+  width: 36px;
+  top: calc(50% - 18px); /* 50% - width */
   left: 50%;
 }
 
 #slider-right-btn img {
   position: absolute;
-  width: 35px;
-  top: 50%;
+  width: 36px;
+  top: calc(50% - 18px);
   right: 50%;
 }
 
