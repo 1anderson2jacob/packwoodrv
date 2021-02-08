@@ -1,0 +1,81 @@
+.fade-in {
+  animation: fadeIn ease 0.4s;
+  -webkit-animation: fadeIn ease 0.4s;
+  -moz-animation: fadeIn ease 0.4s;
+  -o-animation: fadeIn ease 0.4s;
+  -ms-animation: fadeIn ease 0.4s;
+}
+
+#popup-img {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 10000;
+}
+
+#popup-close {
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  font-size: 40px;
+  z-index: 10001;
+  color: gainsboro;
+}
+
+#popup-close:hover {
+  cursor: pointer;
+}
+
+#modal {
+  display: none;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
