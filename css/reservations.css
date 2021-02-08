@@ -1,0 +1,177 @@
+
+
+
+.section-img-container img {
+  height: 500px;
+  /* max-width: 40%; */
+}
+
+.section {
+  background-color: #ecf3fd;
+}
+
+#popup-img {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 10000;
+}
+
+#popup-close {
+  display: none;
+  position: fixed;
+  top: 2%;
+  right: 3%;
+  font-size: 40px;
+  z-index: 10001;
+  color: gainsboro;
+}
+
+#popup-close:hover {
+  cursor: pointer;
+}
+
+#modal {
+  display: none;
+  justify-content: center;
+}
+
+#form {
+  /* width: 35%; */
+  width: 600px;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#calendar {
+  /* display: inline-block; */
+}
+
+.ui-datepicker {
+  margin: 0 auto;
+}
+.ui-menu {
+  max-height: 150px;
+}
+
+.ui-selectmenu-button.ui-button {
+  text-align: center; 
+}
+
+.ui-menu-item-wrapper {
+  text-align: center;
+}
+
+#site-number-menu > li:nth-child(odd) {
+  background-color: #DFF0E2;
+}
+
+label {
+  display: block;
+}
+
+#reservation-card {
+  width: 400px;
+  /* height: 400px; */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #fff;
+}
+
+#reservation-card div {
+  line-height: 2;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+#reservation-card span {
+  float: right;
+}
+
+#reservation-card > div:nth-child(odd){
+  background-color: #ecf3fd;
+}
+
+#subtotal {
+  border-top: 1px solid black;
+}
+
+#checkout-button {
+  /* position: absolute;
+  display: block; */
+  padding: 10px;
+  border: 1px solid #003eff;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #007fff;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.site-map {
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#site-map-img {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.site-map> #zoom-in {
+  position: absolute;
+  width: 30px;
+  top: 5%;
+  right: 5%;
+}
+
+.site-map img:hover{
+  cursor: pointer;
+}
+
+.dim {
+  background: #000;
+  opacity: 0.6;
+  position: fixed;
+  top: 0;
+  left: 0;  
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+
+#asterik {
+  color: red;
+}
+
+
+@media screen and (max-width: 920px) {
+  .section {
+    flex-wrap: wrap;
+  }
+
+  #form {
+    /* max-width: 100%; */
+    width: 100%;
+  }
+  #reservation-card {
+    margin-bottom: 20px;
+  }
+  .section-img-container {
+    margin-bottom: 20px;
+  }
+}
