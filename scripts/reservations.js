@@ -8,9 +8,10 @@ let elInput = $('input');
 let elSiteNumMenu = $('#site-number');
 let elSiteSelect = $('#site-select');
 let checkoutButton = document.getElementById('checkout-button');
-
-const stripe = Stripe('pk_test_51HeP21DDWjIzZ5AKhZvGvh1tibkK2doangylNyItxkhufFKgNrBCpdPxfw1EarMm2JFpQsaNlIjQFpptWzyXkjMD00UolXiJLB');
-
+const BACKEND_URL = 'https://packwoodrv-backend.herokuapp.com';
+// const BACKEND_URL = 'http://localhost:3000';
+const STRIPE_PUB_KEY = 'pk_test_51IIdheJUohNhFpMm2NjymlNZLJ9lVsJOhgupmDcUnLfwvtWHjzAVDcQtYisRBOYIhc5SOE6E68SLIUetSGOYF5H400ROSjLhfg'
+const stripe = Stripe(STRIPE_PUB_KEY);
 let pricesObj = {
   daily: '',
   monthly: '',
@@ -152,7 +153,8 @@ function handleDateSelect(e) {
 
 async function getSites(startDate, endDate) {
   let params = `startDate=${startDate}&endDate=${endDate}`;
-  let url = 'http://localhost:3000/api/v1/reservations/available-sites?' + params;
+  const url = `${BACKEND_URL}/api/v1/reservations/available-sites?${params};`
+  // const url = 'http://localhost:3000/api/v1/reservations/available-sites?' + params;
   const response = await fetch(url, {
     headers: {
       'Content-Type': 'application/json'
@@ -162,7 +164,8 @@ async function getSites(startDate, endDate) {
 }
 
 async function getPrices() {
-  let url = 'http://localhost:3000/prices/';
+  const url = `${BACKEND_URL}/prices`
+  // let url = 'http://localhost:3000/prices/';
   const response = await fetch(url, {
     headers: {
       'Content-Type': 'application/json'
@@ -191,8 +194,16 @@ function addSitesToMenu(unavailableSites) {
 checkoutButton.addEventListener('click', function () {
 
   //check that reservation card has all items
+  let numDays = calcNumDays(formObj.arrivalDate, formObj.departureDate);
+  let bodyObj = {
+    dateStart: formObj.arrivalDate,
+    dateEnd: formObj.departureDate,
+    siteNumber: formObj.siteNum,
+    siteType: formObj.type,
+    totalDays: numDays
+  }
   let checkoutCheck = checkoutReady();
-  if (Array.isArray(checkoutCheck)) {
+  if (Array.isArray(checkoutCheck) || !hasAllValues(bodyObj)) {
     //put red asterik in each item
     checkoutCheck.forEach(el => {
       // el.text('*');
@@ -200,17 +211,8 @@ checkoutButton.addEventListener('click', function () {
     });
 
   } else {
-    let numDays = calcNumDays(formObj.arrivalDate, formObj.departureDate);
-
-    let bodyObj = {
-      dateStart: formObj.arrivalDate,
-      dateEnd: formObj.departureDate,
-      siteNumber: formObj.siteNum,
-      siteType: formObj.type,
-      totalDays: numDays
-    }
-
-    fetch('http://localhost:3000/create-checkout-session', {
+    fetch(`${BACKEND_URL}/create-checkout-session`, {
+      // fetch('http://localhost:3000/create-checkout-session', {
       method: 'POST',
       body: JSON.stringify(bodyObj),
       headers: {
@@ -262,4 +264,16 @@ function checkoutReady() {
   } else {
     return true;
   }
+}
+
+function hasAllValues(obj) {
+  //returns true if obj has values for every key, false if it doesn't.
+  let arr = Object.keys(obj);
+  for (let i = 0; i < arr.length; i++) {
+    if (!obj.hasOwnProperty(arr[i])) {
+      console.log('Object missing values');
+      return false;
+    }
+  }
+  return true;
 }
