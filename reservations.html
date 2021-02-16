@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+sans">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.min.css">
   <link rel="stylesheet" href="./css/jquery-ui.multidatespicker.css">
@@ -22,6 +22,16 @@
   <script src="https://js.stripe.com/v3/"></script>
 
   <title>Packwood RV Park and Campground</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/icons/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/icons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/icons/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/images/icons/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
@@ -51,10 +61,12 @@
   </div>
 
   <div class="body">
-
     <h1>Reservations</h1>
+    <div class="section" style="height: calc(80vh - 120px);">
+      <h2>Coming Soon...</h2>
+    </div>
 
-    <div class="section">
+    <!-- <div class="section">
 
       <div id="form">
         <h3>Type of stay</h3>
@@ -76,7 +88,7 @@
         <div>
           <div class="site-map">
             <img id="site-map-img" src="images/site-map.jpg" alt="Packwood Park" onclick="displayModal()">
-            <img id="zoom-in" src="images/icons/zoom-in.svg">
+            <img id="zoom-in" src="images/icons/zoom-in.svg" onclick="displayModal()">
           </div>
           <label for="site-number">Select a site</label>
           <select name="site-number" id="site-number">
@@ -106,7 +118,7 @@
 
     <div class="section">
       <div id="checkout-button">Checkout</div>
-    </div>
+    </div> -->
 
   </div>
 
@@ -128,9 +140,7 @@
 
   <script type="text/javascript" src="scripts/modal.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
-  <script type="text/javascript" src="scripts/reservations.js"></script>
-  <!-- <script type="text/javascript" src="scripts/stripe.js"></script> -->
-
+  <!-- <script type="text/javascript" src="scripts/reservations.js"></script> -->
 </body>
 
 </html>

@@ -25,7 +25,17 @@ h1 {
   margin-top: 20px;
   margin-bottom: 20px;
   color: #395B4A;
-  text-align: center
+  text-align: center;
+  border-bottom: 1px solid #DFF0E2;
+  padding-bottom: 3px;
+}
+
+h2 {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #395B4A;
+  text-align: center;
 }
 
 .section-text {
