@@ -1,7 +1,9 @@
 'use strict';
+import { centeredPopup } from './popup-window.js';
 
 let numSites = 87
 let sitesArr = [];
+let unavailableSites = [];
 let elCalendar = $('#calendar');
 let elForm = $('#form');
 let elInput = $('input');
@@ -10,6 +12,8 @@ let elSiteSelect = $('#site-select');
 let checkoutButton = document.getElementById('checkout-button');
 const BACKEND_URL = 'https://packwoodrv-backend.herokuapp.com';
 // const BACKEND_URL = 'http://localhost:3000';
+const FRONTEND_URL_ORIGIN = 'http://127.0.0.1:8080';
+// const FRONTEND_URL_ORIGIN = 'http://packwoodrv.com';
 const STRIPE_PUB_KEY = 'pk_test_51IIdheJUohNhFpMm2NjymlNZLJ9lVsJOhgupmDcUnLfwvtWHjzAVDcQtYisRBOYIhc5SOE6E68SLIUetSGOYF5H400ROSjLhfg'
 const stripe = Stripe(STRIPE_PUB_KEY);
 let pricesObj = {
@@ -17,6 +21,21 @@ let pricesObj = {
   monthly: '',
   weekly: ''
 }
+
+$('#reservations-map').on('click', () => {
+  const url = './reservations-map.html'
+  const winName = 'Select a site(s)'
+  //ratio is width is 90/105 of height
+  const h = screen.height * .9;
+  const w = h * (90 / 105);
+  const scroll = false;
+  let popup = centeredPopup(url, winName, w, h, scroll);
+  popup.unavailableSites = [1, 2, 5, 22, 45, 56, 67, 78]
+  popup.windowTest = function (str) {
+    console.log(str);
+  }
+  // popup.unavailableSites = unavailableSites;
+})
 
 loadPrices();
 
@@ -145,8 +164,8 @@ function handleDateSelect(e) {
 
     getSites(dates[0], dates[1])
       .then(data => {
-        console.log(data.results);
-        addSitesToMenu(data.results);
+        unavailableSites = data.results;
+        addSitesToMenu(unavailableSites);
       })
   };
 }
@@ -175,13 +194,9 @@ async function getPrices() {
 }
 
 function addSitesToMenu(unavailableSites) {
-  console.log('in addSitesToMenu');
   elSiteNumMenu.empty();
   let filteredSites = sitesArr.filter(site => !unavailableSites.includes(site));
-  console.log('filtered sites: ' + filteredSites.length);
-
   filteredSites.forEach(site => {
-    // menu.append(new Option(site, site));
     elSiteNumMenu.append(
       $('<option/>', {
         value: site,

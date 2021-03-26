@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/body.css">
+  <link rel="stylesheet" href="./css/reservations-map.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="scripts/jquery.maphilight.js"></script>
+
+  <title>Packwood RV Park and Campground</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicons/favicon-16x16.png">
+  <link rel="manifest" href="/images/icons/favicons/site.webmanifest">
+  <link rel="mask-icon" href="/images/icons/favicons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/images/icons/favicons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/images/icons/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+  <div class="body">
+
+    <h2>Select any number of open sites</h2>
+
+    <div id="img-map-container">
+      <img id="img_ID" src="https://packwoodrv.com/images/site-map.jpg" class="map" usemap="#map">
+    </div>
+
+    <map id="map_ID" name="map">
+      <area target="" alt="site-1" id="site-1" title="site-1" coords="45,189,116,174" shape="rect">
+      <area target="" alt="site-2" id="site-2" title="site-2" coords="45,203,116,220" shape="rect">
+      <area target="" alt="site-3" id="site-3" title="site-3" coords="46,229,116,246" shape="rect">
+      <area target="" alt="site-4" id="site-4" title="site-4" coords="44,264,116,281" shape="rect">
+      <area target="" alt="site-5" id="site-5" title="site-5" coords="44,291,116,308" shape="rect">
+      <area target="" alt="site-6" id="site-6" title="site-6" coords="44,325,116,342" shape="rect">
+      <area target="" alt="site-7" id="site-7" title="site-7" coords="45,362,116,378" shape="rect">
+      <area target="" alt="site-8" id="site-8" title="site-8" coords="45,390,117,406" shape="rect">
+      <area target="" alt="site-9" id="site-9" title="site-9" coords="44,417,116,433" shape="rect">
+      <area target="" alt="site-10" id="site-10" title="site-10" coords="45,467,116,483" shape="rect">
+      <area target="" alt="site-11" id="site-11" title="site-11" coords="54,536,73,601" shape="rect">
+      <area target="" alt="site-12" id="site-12" title="site-12" coords="104,536,123,601" shape="rect">
+      <area target="" alt="site-13" id="site-13" title="site-13" coords="187,536,206,602" shape="rect">
+      <area target="" alt="site-14" id="site-14" title="site-14" coords="221,536,240,601" shape="rect">
+      <area target="" alt="site-15" id="site-15" title="site-15" coords="296,536,315,603" shape="rect">
+      <area target="" alt="site-16" id="site-16" title="site-16" coords="144,467,215,482" shape="rect">
+      <area target="" alt="site-17" id="site-17" title="site-17" coords="144,442,216,458" shape="rect">
+      <area target="" alt="site-18" id="site-18" title="site-18" coords="149,418,215,433" shape="rect">
+      <area target="" alt="site-19" id="site-19" title="site-19" coords="151,405,145,390,210,364,216,379" shape="poly">
+      <area target="" alt="site-20" id="site-20" title="site-20" coords="144,337,216,353" shape="rect">
+      <area target="" alt="site-21" id="site-21" title="site-21" coords="145,310,216,327" shape="rect">
+      <area target="" alt="site-22" id="site-22" title="site-22" coords="144,283,215,299" shape="rect">
+      <area target="" alt="site-23" id="site-23" title="site-23" coords="143,256,216,273" shape="rect">
+      <area target="" alt="site-24" id="site-24" title="site-24" coords="143,228,216,245" shape="rect">
+      <area target="" alt="site-25" id="site-25" title="site-25" coords="144,202,215,219" shape="rect">
+      <area target="" alt="site-26" id="site-26" title="site-26" coords="327,179,381,202" shape="rect">
+      <area target="" alt="site-27" id="site-27" title="site-27" coords="326,220,399,239" shape="rect">
+      <area target="" alt="site-28" id="site-28" title="site-28" coords="327,265,401,282" shape="rect">
+      <area target="" alt="site-29" id="site-29" title="site-29" coords="326,311,399,328" shape="rect">
+      <area target="" alt="site-30" id="site-30" title="site-30" coords="327,355,398,373" shape="rect">
+      <area target="" alt="site-31" id="site-31" title="site-31" coords="325,400,327,419,399,419,399,401" shape="poly">
+      <area target="" alt="site-32" id="site-32" title="site-32" coords="347,444,420,463" shape="rect">
+      <area target="" alt="site-33" id="site-33" title="site-33" coords="401,468,472,485" shape="rect">
+      <area target="" alt="site-34" id="site-34" title="site-34" coords="401,423,472,442" shape="rect">
+      <area target="" alt="site-35" id="site-35" title="site-35" coords="401,379,472,397" shape="rect">
+      <area target="" alt="site-36" id="site-36" title="site-36" coords="401,333,472,351" shape="rect">
+      <area target="" alt="site-37" id="site-37" title="site-37" coords="401,288,472,306" shape="rect">
+      <area target="" alt="site-38" id="site-38" title="site-38" coords="401,243,472,261" shape="rect">
+      <area target="" alt="site-39" id="site-39" title="site-39" coords="425,156,444,202" shape="rect">
+      <area target="" alt="site-40" id="site-40" title="site-40" coords="570,163,589,206" shape="rect">
+      <area target="" alt="site-41" id="site-41" title="site-41" coords="623,185,658,196" shape="rect">
+      <area target="" alt="site-42" id="site-42" title="site-42" coords="615,148,635,133,659,131,660,148" shape="poly">
+      <area target="" alt="site-43" id="site-43" title="site-43" coords="656,160,670,148,699,181,683,194" shape="poly">
+      <area target="" alt="site-44" id="site-44" title="site-44" coords="533,282,547,338" shape="rect">
+      <area target="" alt="site-45" id="site-45" title="site-45" coords="551,252,568,338" shape="rect">
+      <area target="" alt="site-46" id="site-46" title="site-46" coords="572,261,590,347" shape="rect">
+      <area target="" alt="site-47" id="site-47" title="site-47" coords="594,252,610,348" shape="rect">
+      <area target="" alt="site-48" id="site-48" title="site-48" coords="615,252,632,347" shape="rect">
+      <area target="" alt="site-49" id="site-49" title="site-49" coords="635,255,652,347" shape="rect">
+      <area target="" alt="site-50" id="site-50" title="site-50" coords="656,252,673,347" shape="rect">
+      <area target="" alt="site-51" id="site-51" title="site-51" coords="678,252,694,347" shape="rect">
+      <area target="" alt="site-52" id="site-52" title="site-52" coords="567,384,583,480" shape="rect">
+      <area target="" alt="site-53" id="site-53" title="site-53" coords="588,385,605,480" shape="rect">
+      <area target="" alt="site-54" id="site-54" title="site-54" coords="610,385,627,481" shape="rect">
+      <area target="" alt="site-55" id="site-55" title="site-55" coords="631,385,647,480" shape="rect">
+      <area target="" alt="site-56" id="site-56" title="site-56" coords="671,383,688,481" shape="rect">
+      <area target="" alt="site-57" id="site-57" title="site-57" coords="694,385,706,376,742,422,731,432" shape="poly">
+      <area target="" alt="site-58" id="site-58" title="site-58" coords="796,369,867,388" shape="rect">
+      <area target="" alt="site-59" id="site-59" title="site-59" coords="796,395,866,414" shape="rect">
+      <area target="" alt="site-60" id="site-60" title="site-60" coords="797,418,866,438" shape="rect">
+      <area target="" alt="site-61" id="site-61" title="site-61" coords="796,443,866,463" shape="rect">
+      <area target="" alt="site-62" id="site-62" title="site-62" coords="797,469,866,489" shape="rect">
+      <area target="" alt="site-63" id="site-63" title="site-63" coords="797,493,866,513" shape="rect">
+      <area target="" alt="site-64" id="site-64" title="site-64" coords="812,517,833,597" shape="rect">
+      <area target="" alt="site-65" id="site-65" title="site-65" coords="788,518,809,597" shape="rect">
+      <area target="" alt="site-66" id="site-66" title="site-66" coords="764,518,785,597" shape="rect">
+      <area target="" alt="site-67" id="site-67" title="site-67" coords="741,517,761,597" shape="rect">
+      <area target="" alt="site-68" id="site-68" title="site-68" coords="717,518,736,597" shape="rect">
+      <area target="" alt="site-69" id="site-69" title="site-69" coords="692,517,713,597" shape="rect">
+      <area target="" alt="site-70" id="site-70" title="site-70" coords="669,518,688,597" shape="rect">
+      <area target="" alt="site-71" id="site-71" title="site-71" coords="645,518,664,597" shape="rect">
+      <area target="" alt="site-72" id="site-72" title="site-72" coords="620,517,640,597" shape="rect">
+      <area target="" alt="site-73" id="site-73" title="site-73" coords="567,523,585,515,617,587,600,595" shape="poly">
+      <area target="" alt="site-74" id="site-74" title="site-74" coords="542,517,562,597" shape="rect">
+      <area target="" alt="site-75" id="site-75" title="site-75" coords="518,518,538,597" shape="rect">
+      <area target="" alt="site-76" id="site-76" title="site-76" coords="515,623,596,642" shape="rect">
+      <area target="" alt="site-77" id="site-77" title="site-77" coords="516,650,595,669" shape="rect">
+      <area target="" alt="site-78" id="site-78" title="site-78" coords="524,953,543,1032" shape="rect">
+      <area target="" alt="site-79" id="site-79" title="site-79" coords="568,953,588,1032" shape="rect">
+      <area target="" alt="site-80" id="site-80" title="site-80" coords="616,952,636,1032" shape="rect">
+      <area target="" alt="site-81" id="site-81" title="site-81" coords="661,952,680,1033" shape="rect">
+      <area target="" alt="site-82" id="site-82" title="site-82" coords="642,718,660,784" shape="rect">
+      <area target="" alt="site-83" id="site-83" title="site-83" coords="672,718,691,784" shape="rect">
+      <area target="" alt="site-84" id="site-84" title="site-84" coords="704,718,723,785" shape="rect">
+      <area target="" alt="site-85" id="site-85" title="site-85" coords="770,695,789,761" shape="rect">
+      <area target="" alt="site-86" id="site-86" title="site-86" coords="800,695,818,761" shape="rect">
+      <area target="" alt="site-87" id="site-87" title="site-87" coords="833,695,851,761" shape="rect">
+      <area target="" alt="tent-1" id="tent-1" title="tent-1" coords="594,826,586,844,604,844" shape="poly">
+      <area target="" alt="tent-2" id="tent-2" title="tent-2" coords="660,827,653,843,669,843" shape="poly">
+      <area target="" alt="tent-3" id="tent-3" title="tent-3" coords="727,827,720,843,736,843" shape="poly">
+      <area target="" alt="tent-4" id="tent-4" title="tent-4" coords="793,825,786,843,802,843" shape="poly">
+      <area target="" alt="tent-5" id="tent-5" title="tent-5" coords="595,863,589,880,604,880" shape="poly">
+      <area target="" alt="tent-6" id="tent-6" title="tent-6" coords="661,864,653,880,669,880" shape="poly">
+      <area target="" alt="tent-7" id="tent-7" title="tent-7" coords="728,864,721,880,738,880" shape="poly">
+      <area target="" alt="tent-8" id="tent-8" title="tent-8" coords="794,863,786,880,804,880" shape="poly">
+      <area target="" alt="tent-9" id="tent-9" title="tent-9" coords="595,898,587,915,603,915" shape="poly">
+      <area target="" alt="tent-10" id="tent-10" title="tent-10" coords="662,898,653,914,670,915" shape="poly">
+      <area target="" alt="tent-11" id="tent-11" title="tent-11" coords="728,897,720,915,738,915" shape="poly">
+      <area target="" alt="tent-12" id="tent-12" title="tent-12" coords="794,898,787,913,802,913" shape="poly">
+      <area target="" alt="tent-13" id="tent-13" title="tent-13" coords="552,451,543,468,561,468" shape="poly">
+      <area target="" alt="tent-14" id="tent-14" title="tent-14" coords="545,423,537,439,553,440" shape="poly">
+      <area target="" alt="tent-15" id="tent-15" title="tent-15" coords="543,391,535,409,551,409" shape="poly">
+      <area target="" alt="tent-16" id="tent-16" title="tent-16" coords="813,325,806,343,822,342" shape="poly">
+      <area target="" alt="tent-17" id="tent-17" title="tent-17" coords="848,282,842,299,857,300" shape="poly">
+      <area target="" alt="tent-18" id="tent-18" title="tent-18" coords="842,235,834,254,852,253" shape="poly">
+      <area target="" alt="tent-19" id="tent-19" title="tent-19" coords="788,215,780,232,796,231" shape="poly">
+    </map>
+
+    <!-- <div id="close-btn">Close</div> -->
+    <a id="close-btn" href="JavaScript:window.close()">Close</a>
+
+  </div>
+
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="scripts/image-map.js"></script>
+  <script type="module" src="scripts/reservations-map.js"></script>
+</body>
+
+</html>

@@ -128,6 +128,12 @@ label {
 }
 
 #site-map-img {
+  /* get rid of if keeping reservations-map */
+  width: 100%;
+  border: 1px solid black;
+}
+
+#reservations-map {
   width: 100%;
   border: 1px solid black;
 }

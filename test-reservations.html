@@ -35,9 +35,9 @@
 </head>
 
 <body>
-  <div id="modal" class="dim"></div>
+  <!-- <div id="modal" class="dim"></div>
   <img id="popup-img" class="fade-in" src="images/site-map.jpg">
-  <p id="popup-close" class="fade-in">&#x2715</p>
+  <p id="popup-close" class="fade-in">&#x2715</p> -->
 
   <div id="header">
     <div id="logo-container">
@@ -86,13 +86,12 @@
 
         <h3 id="site-select">Which Spot</h3>
         <div>
-          <label>Click map to select one or more sites</label>
           <div class="site-map">
             <!-- <img id="site-map-img" src="images/site-map.jpg" alt="Packwood Park" onclick="displayModal()">
             <img id="zoom-in" src="images/icons/zoom-in.svg" onclick="displayModal()"> -->
-            <img id="reservations-map" src="images/site-map.jpg" alt="Reservations map">
+            <img id="#reservations-map" src="images/site-map.jpg" alt="Reservations map">
           </div>
-          <label for="site-number">or</label>
+          <label for="site-number">Select a site</label>
           <select name="site-number" id="site-number">
             <option>Choose a site</option>
           </select>
@@ -122,6 +121,10 @@
       <div id="checkout-button">Checkout</div>
     </div>
 
+    <div id="modal" class="dim"></div>
+    <img id="popup-img" class="fade-in" src="images/site-map.jpg">
+    <p id="popup-close" class="fade-in">&#x2715</p>
+
   </div>
 
   <div id="footer">
@@ -142,8 +145,7 @@
 
   <script type="text/javascript" src="scripts/modal.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
-  <script type="module" src="scripts/reservations.js"></script>
-  <!-- <script type="text/javascript" src="scripts/popup-window.js"></script> -->
+  <script type="text/javascript" src="scripts/reservations.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+#img-map-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#img_ID {
+  width: 100%;
+  max-height: 100%;
+}
+
+h2 {
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  background-color: #ecf3fd;
+  margin: 10px;
+  padding: 5px;
+}
+
+#close-btn {
+  display: block;
+  padding: 10px;
+  border: 1px solid #003eff;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #007fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+
