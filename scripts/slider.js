@@ -13,21 +13,21 @@ function bindSlider() {
     if (e.target && (e.target.id == 'slider-right-btn' || e.target.id == 'slider-right-arrow')) {
       changeSlide('right');
     }
-  })
+  });
 
   mc.on('swipeleft', (e) => {
     changeSlide('right');
-  })
+  });
   mc.on('swiperight', (e) => {
     changeSlide('left');
-  })
+  });
 }
 
 function changeSlide(arrow) {
-  let slides = document.getElementsByClassName("slider-image-container");
+  let slides = document.getElementsByClassName('slider-image-container');
 
   for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = 'none';
   }
 
   if (arrow == 'right') { //increment
@@ -44,5 +44,5 @@ function changeSlide(arrow) {
     }
   }
 
-  slides[slideIndex - 1].style.display = "block"
+  slides[slideIndex - 1].style.display = 'block';
 }
