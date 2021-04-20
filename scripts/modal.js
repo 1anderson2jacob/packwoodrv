@@ -15,7 +15,7 @@ function bindModal() {
 
       document.querySelector('body').style.overflow = 'visible';
     }
-  })
+  });
 
   popupClose.addEventListener('click', (e) => {
     if (modal.style.display !== 'none') {
@@ -25,7 +25,7 @@ function bindModal() {
 
       document.querySelector('body').style.overflow = 'visible';
     }
-  })
+  });
 }
 
 function displayModal() {
