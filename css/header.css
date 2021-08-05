@@ -66,6 +66,10 @@ a {
   color: white;
 }
 
+#navbar a:hover {
+  color: dimgray;
+}
+
 .selected {
   border: 1px solid white;
   border-radius: 3px;

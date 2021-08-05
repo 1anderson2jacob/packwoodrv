@@ -4,3 +4,10 @@
 p {
   text-align: center;
 }
+
+#successful-reservation {
+  display: none;
+}
+#unsuccessful-reservation { 
+  display: none;
+}

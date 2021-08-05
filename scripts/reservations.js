@@ -14,7 +14,7 @@ let checkoutButton = document.getElementById('checkout-button');
 const BACKEND_URL = 'http://localhost:3000';
 const FRONTEND_URL_ORIGIN = 'http://127.0.0.1:8080';
 // const FRONTEND_URL_ORIGIN = 'http://packwoodrv.com';
-const STRIPE_PUB_KEY = 'pk_test_51IIdheJUohNhFpMm2NjymlNZLJ9lVsJOhgupmDcUnLfwvtWHjzAVDcQtYisRBOYIhc5SOE6E68SLIUetSGOYF5H400ROSjLhfg'
+const STRIPE_PUB_KEY = 'pk_test_51IIdheJUohNhFpMm2NjymlNZLJ9lVsJOhgupmDcUnLfwvtWHjzAVDcQtYisRBOYIhc5SOE6E68SLIUetSGOYF5H400ROSjLhfg';
 const stripe = Stripe(STRIPE_PUB_KEY);
 let pricesObj = {
   daily: '',
@@ -177,7 +177,7 @@ async function getSites(startDate, endDate) {
   // const url = 'http://localhost:3000/api/v1/reservations/available-sites?' + params;
   const response = await fetch(url, {
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type': 'application/json',
     },
   });
   return response.json();
