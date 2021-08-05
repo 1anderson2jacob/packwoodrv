@@ -1,4 +1,4 @@
-import { blackOut, addHighlight, removeHighlight } from './highlight-sites.js'
+import { blackOut, addHighlight, removeHighlight } from './highlight-sites.js';
 
 
 // const URL = 'https://packwoodrv.com/reservations';
@@ -19,12 +19,12 @@ let unavailableSites = window.unavailableSites;
 console.log(unavailableSites);
 setTimeout(() => {
   blackOut(unavailableSites);
-}, 150)
+}, 150);
 
 $('#map_ID').on('click', function (e) {
   let siteNum = e.target.id.replace(/\D/g, '');
   console.log(unavailableSites);
-  console.log(siteNum)
+  console.log(siteNum);
   if (!unavailableSites.includes(siteNum)) {
 
     if (!litArr.includes(siteNum)) {
@@ -42,4 +42,4 @@ $('#map_ID').on('click', function (e) {
 
   // window.opener.yourFunction()
   // to a parent window function (eg to update selected sites)
-})
+});
