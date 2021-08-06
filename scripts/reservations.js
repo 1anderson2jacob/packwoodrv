@@ -89,6 +89,7 @@ for (let i = 0; i < numSites; i++) {
 elCalendar.multiDatesPicker({
   maxPicks: 2,
   minDate: 0,
+  maxDate: 365 + 31,
   onSelect: handleDateSelect,
 });
 
