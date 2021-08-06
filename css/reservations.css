@@ -109,6 +109,7 @@ label {
 #checkout-button {
   /* position: absolute;
   display: block; */
+  width: 100px;
   padding: 10px;
   border: 1px solid #003eff;
   color: white;
@@ -121,6 +122,10 @@ label {
   cursor: pointer;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+}
 .site-map {
   width: 200px;
   margin: 0 auto;

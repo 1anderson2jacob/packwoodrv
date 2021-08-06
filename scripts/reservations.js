@@ -3,6 +3,7 @@ import { centeredPopup } from './popup-window.js';
 
 let numSites = 87;
 let sitesArr = [];
+let availableSites = [];
 let unavailableSites = [];
 let elCalendar = $('#calendar');
 let elForm = $('#form');
@@ -165,8 +166,8 @@ function handleDateSelect(e) {
 
     getSites(dates[0], dates[1])
       .then(data => {
-        unavailableSites = data.results;
-        addSitesToMenu(unavailableSites);
+        availableSites = data.results;
+        addSitesToMenu();
       });
   }
 }
@@ -193,10 +194,10 @@ async function getPrices() {
   return response.json();
 }
 
-function addSitesToMenu(unavailableSites) {
+function addSitesToMenu() {
   elSiteNumMenu.empty();
-  let filteredSites = sitesArr.filter(site => !unavailableSites.includes(site));
-  filteredSites.forEach(site => {
+
+  availableSites.forEach(site => {
     elSiteNumMenu.append(
       $('<option/>', {
         value: site,
