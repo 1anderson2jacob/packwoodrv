@@ -1,0 +1,28 @@
+#cancel-successful {
+  display: none;
+}
+
+#cancel-unsuccessful {
+  display: none;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+p {
+  text-align: center;
+}
+
+.img-container img {
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+ .img-container img {
+   width: 80%;
+ }
+}

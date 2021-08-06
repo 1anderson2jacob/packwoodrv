@@ -2,6 +2,7 @@
   display: flex;
   font-family: Georgia, serif;
   color: #395B4A;
+  border-top: 1px solid white;
 }
 
 #footer-info {
