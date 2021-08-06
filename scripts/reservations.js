@@ -1,21 +1,17 @@
 'use strict';
 import { centeredPopup } from './popup-window.js';
+import {default as configVars}  from './config-vars.js';
+const {BACKEND_URL, STRIPE_PUB_KEY} = configVars;
 
 let numSites = 87;
 let sitesArr = [];
 let availableSites = [];
-let unavailableSites = [];
 let elCalendar = $('#calendar');
 let elForm = $('#form');
 let elInput = $('input');
 let elSiteNumMenu = $('#site-number');
 let elSiteSelect = $('#site-select');
 let checkoutButton = document.getElementById('checkout-button');
-// const BACKEND_URL = 'https://packwoodrv-backend.herokuapp.com';
-const BACKEND_URL = 'http://localhost:3000';
-const FRONTEND_URL_ORIGIN = 'http://127.0.0.1:8080';
-// const FRONTEND_URL_ORIGIN = 'http://packwoodrv.com';
-const STRIPE_PUB_KEY = 'pk_test_51IIdheJUohNhFpMm2NjymlNZLJ9lVsJOhgupmDcUnLfwvtWHjzAVDcQtYisRBOYIhc5SOE6E68SLIUetSGOYF5H400ROSjLhfg';
 const stripe = Stripe(STRIPE_PUB_KEY);
 let pricesObj = {
   daily: '',
