@@ -1,10 +1,17 @@
+:root {
+  --header-height: 120px;
+  --mobile-header-height: 160px;
+  --offset: 30px;
+  --mobile-offset: 80px;
+}
+
 .slider-image-container:not(:first-child) {
   display: none;
 }
 
 #slider-img {
   width: 100%;
-  height: calc(100vh - 120px);
+  height: calc(100vh - var(--header-height) - var(--offset));
   float: left;
   object-fit: cover;
 }
@@ -91,7 +98,7 @@
 
 @media screen and (max-width: 680px) {
   #slider-img {
-    height: calc(100vh - 160px);
+    height: calc(100vh - var(--mobile-header-height) - var(--mobile-offset));
   }
 }
 @media (hover: hover) and (pointer: fine) {
