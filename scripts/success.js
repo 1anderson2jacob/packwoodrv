@@ -1,7 +1,7 @@
 'use strict';
 
-const BACKEND_URL = 'http://localhost:3000';
-// const BACKEND_URL = 'https://packwoodrv-backend.herokuapp.com';
+import {default as configVars}  from './config-vars.js';
+const {BACKEND_URL} = configVars;
 const session_id = window.location.href.split('session_id=').pop();
 
 async function getReservationStatus(session_id) {

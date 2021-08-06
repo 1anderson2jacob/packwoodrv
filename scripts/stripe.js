@@ -1,8 +1,8 @@
 // Create an instance of the Stripe object with your publishable API key
-// const BACKEND_URL = 'https://packwoodrv-backend.herokuapp.com/';
-const BACKEND_URL = 'http://localhost:3000';
-const STRIPE_PUB_KEY = 'pk_test_51IIdheJUohNhFpMm2NjymlNZLJ9lVsJOhgupmDcUnLfwvtWHjzAVDcQtYisRBOYIhc5SOE6E68SLIUetSGOYF5H400ROSjLhfg';
-// const STRIPE_PUB_KEY = 'pk_test_51HeP21DDWjIzZ5AKhZvGvh1tibkK2doangylNyItxkhufFKgNrBCpdPxfw1EarMm2JFpQsaNlIjQFpptWzyXkjMD00UolXiJLB'
+
+import {default as configVars}  from './config-vars.js';
+const {BACKEND_URL, STRIPE_PUB_KEY} = configVars;
+
 var stripe = Stripe(STRIPE_PUB_KEY);
 
 var checkoutButton = document.getElementById('checkout-button');
