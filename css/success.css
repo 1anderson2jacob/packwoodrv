@@ -11,3 +11,6 @@ p {
 #unsuccessful-reservation { 
   display: none;
 }
+#server-error {
+  display: none;
+}
